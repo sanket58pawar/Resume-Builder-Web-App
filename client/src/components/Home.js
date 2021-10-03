@@ -39,7 +39,7 @@ const Home = () => {
                     <h2> { show ? 'Happy, to see you back' :  'to Resume Builder WebApp' }</h2>
                 </div>
                 <div className="build-resume-button">
-                    <NavLink to="/login"> <button> Build Resume</button></NavLink>
+                    <NavLink to="./ResumeApp"> <button> Build Resume</button></NavLink>
                     
                 </div>
             </div>

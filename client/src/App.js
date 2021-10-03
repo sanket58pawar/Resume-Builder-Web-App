@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ErrorPage from "./components/Errorpage";
 import Logout from "./components/Logout";
+import ResumeApp from "./ResumeApp";
 
 
 import { initialState, reducer } from "./reducer/UseReducer";
@@ -49,6 +50,10 @@ const Routing = () => {
         
       <Route path="/logout">
         <Logout />
+      </Route>
+
+      <Route path="/resumeapp">
+        <ResumeApp />
       </Route>
       
       <Route>
