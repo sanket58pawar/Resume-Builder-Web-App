@@ -61,7 +61,7 @@ const Routing = () => {
 
 const App = () => {
 
-  //* we use useReducer
+  //* we used useReducer
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
