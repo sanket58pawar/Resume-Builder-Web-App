@@ -40,7 +40,7 @@ router.get('/', (req, res) => {
 
 // });
 
-// Async-Await 
+// using Async-Await 
 
 router.post('/register', async (req, res) => {
 

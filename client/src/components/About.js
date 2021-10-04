@@ -45,7 +45,7 @@ const About = () => {
                 <form method="GET">
                     <div className="row">
                         <div className="col-md-4">
-                            <div className="profile-img">
+                            <div className="mr-auto p-2 bd-highlight profile-img" >
                                   <img src={userData.name === "Sanket Pawar" ? sanketpic : aboutpic} alt="pawar" />
                             </div>
                           
@@ -82,7 +82,8 @@ const About = () => {
                         {/* left side url  */}
                         <div className="col-md-4">
                             <div className="profile-work">
-                                <h6> Work Links</h6>
+                                
+                                <h5> Work Links</h5>
                                 
                                 <a href="http://localhost:3000/about"                target="_sanket">Portfolio</a> <br />
                                 <a href="https://github.com/sanket58pawar"           target="_sanket">Github</a> <br />
@@ -101,7 +102,7 @@ const About = () => {
                         <div className="tab-content profile-tab" id="myTabContent">
                             <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                         <div className="row">
-                                            <div className="col-md-6">
+                                            <div className=" col-md-6">
                                                <label>User Id</label>
                                             </div>
                                             <div className="col-md-6">

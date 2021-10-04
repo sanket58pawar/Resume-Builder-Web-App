@@ -21,7 +21,7 @@ const Signup = () => {
 
     const PostData = async (e) => {
         e.preventDefault();
-
+        //object destructuring
         const { name, email, phone, work, password, cpassword } = user;
 
         const res = await fetch("/register", {
@@ -30,6 +30,8 @@ const Signup = () => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
+                // name:name, email:email, phone:phone, work:work, password:password, cpassword:cpassword
+                // since the key and value are same we can reduce this to further
                 name, email, phone, work, password, cpassword
             })
         });
@@ -38,8 +40,8 @@ const Signup = () => {
 
         // I need to change the data to res 
         if (data.status === 422 || !data) {
-            window.alert("INvalid Registration");
-            console.log("INvalid Registration");
+            window.alert("Invalid Registration");
+            console.log("Invalid Registration");
         } else {
              window.alert(" Registration Successfull");
             console.log("Successfull Registration");
