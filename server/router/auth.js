@@ -119,13 +119,20 @@ router.post('/signin', async (req, res) => {
 // about us ka page 
 
 router.get('/about', authenticate ,(req, res) => {
-    console.log(`Hello my About`);
+    console.log(`on about Page`);
+    res.send(req.rootUser);
+});
+
+
+// Resume App Page
+router.get('/resumeapp', authenticate ,(req, res) => {
+    console.log(`on resumeapp Page`);
     res.send(req.rootUser);
 });
 
 // get user data for contact us and home page 
 router.get('/getdata', authenticate, (req, res) => {
-    console.log(`Hello my About`);
+    console.log(`getting data`);
     res.send(req.rootUser);
 });
 
